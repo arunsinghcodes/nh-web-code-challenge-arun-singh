@@ -20,8 +20,6 @@ export const DashboardForm = ({ onSubmit }: Props) => {
     onSubmit(patientAddress, includeLab);
   };
 
-  console.log(patientAddress);
-
   return (
     <div className="rounded-3xl border border-purple-100 bg-white p-8 shadow-sm">
       <h2 className="mb-6 text-2xl font-semibold">Patient Visit Details</h2>

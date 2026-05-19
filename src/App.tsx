@@ -9,10 +9,7 @@ function App() {
   const [result, setResult] = useState<MatchResult | null>(null);
 
   const handleFindClinician = (patientAddress: string, includeLab: boolean) => {
-    console.log(patientAddress);
-
     const response = findOptimalClinician(patientAddress, includeLab);
-
     setResult(response);
   };
 
