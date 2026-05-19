@@ -16,7 +16,7 @@ function App() {
             based on minimum travel distance.
           </p>
         </div>
-        <div>
+       <div className="grid gap-8 lg:grid-cols-2">
           <DashboardFrom/>
           <ResultCard/>
         </div>
