@@ -9,3 +9,9 @@ export type Lab = {
   name: string;
   address: string;
 };
+
+export type MatchResult = {
+  clinicianName: string;
+  totalDistance: number;
+  routeType: 'Standard Visit' | 'Lab Visit';
+};

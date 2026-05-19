@@ -1,14 +1,20 @@
-export const ResultCard = () =>{
+import type { MatchResult } from "../types";
+
+interface Props {
+  result: MatchResult;
+}
+
+export const ResultCard = ({ result }: Props)=>{
    return (
     <div className="rounded-3xl border border-purple-100 bg-white p-6 shadow-sm">
       <div className="mb-6 flex items-center gap-4">
         <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-2xl font-semibold text-white">
-          M
+          {result.clinicianName.charAt(0)}
         </div>
 
         <div>
           <h2 className="text-2xl font-semibold ">
-            Brad
+            {result.clinicianName}
           </h2>
 
           <p className="mt-1 text-sm">
@@ -24,7 +30,7 @@ export const ResultCard = () =>{
           </p>
 
           <h3 className="mt-1 text-2xl font-semibold ">
-            24 miles
+           {result.totalDistance} miles
           </h3>
         </div>
 
@@ -34,7 +40,7 @@ export const ResultCard = () =>{
           </p>
 
           <h3 className="mt-1 text-2xl font-semibold ">
-            Standard Visit
+            {result.routeType}
           </h3>
         </div>
       </div>
