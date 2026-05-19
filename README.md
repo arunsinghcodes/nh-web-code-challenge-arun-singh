@@ -8,7 +8,7 @@ A modern healthcare dispatch dashboard built with **React** and **TypeScript** t
 
 ## Live Demo
 
-_Add deployed Vercel link here_
+[_Clinician Dispatch Dashboard_](https://nh-web-code-challenge-arun-singh.vercel.app)
 
 ---
 
